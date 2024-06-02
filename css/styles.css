@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.btn__light__blue,
+.btn__dark__blue {
+  background-color: aliceblue;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+.btn__light__blue:hover svg,
+.btn__dark__blue:hover svg {
+  transition: all 300ms ease-in-out;
+  transform: translateX(3px);
+}
+
+.btn__light__blue {
+  background-color: rgb(255, 255, 255);
+  color: hsl(195, 100%, 25%);
+  border: 1px solid hsl(195, 100%, 25%);
+}
+
+.btn__dark__blue {
+  background-color: hsl(195, 100%, 25%);
+  color: rgb(255, 255, 255);
+  border: 1px solid hsl(195, 100%, 25%);
+}
+.btn__dark__blue:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.btn__dark__blue svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.color__light__blue {
+  color: rgb(86, 220, 200);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Serif TC";
+}
+
+p {
+  font-family: "Nunito";
+  font-size: 16px;
+}
+
+a {
+  font-family: "Nunito";
+  font-weight: bold;
+  text-decoration: none !important;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__pillis__arely {
+  display: inline-block;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.nav__pillis__arely .nav-item a {
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+}
+.nav__pillis__arely .nav-item .active {
+  font-weight: 700;
+  color: hsl(195, 100%, 25%) !important;
+}
+
+.navbar__arely {
+  background-color: rgb(86, 220, 200);
+  color: rgb(255, 255, 255) !important;
+}
+.navbar__arely .navbar__text {
+  font-family: "Nunito";
+}
+.navbar__arely .navbar__text span {
+  font-family: "Nunito";
+  color: hsl(195, 100%, 25%);
+  font-weight: bold;
+}
+
+.container__banner {
+  height: 70vh;
+}
+.container__banner .banner__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+.container__banner .banner__description span {
+  font-family: "Nunito";
+}
+.container__banner .banner__description h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+.container__banner .banner__description p {
+  margin: 1rem 0;
+}
+.container__banner .banner__description p i {
+  font-weight: bold;
+}
+.container__banner .banner__image .banner__image__content {
+  width: 90%;
+  height: 100%;
+}
+.container__banner .banner__image .banner__image__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container__tape {
+  background: linear-gradient(86deg, rgb(86, 220, 200) 11%, rgb(0, 96, 128) 100%);
+  padding: 0.7rem 0;
+}
+.container__tape .code__discount {
+  text-align: center;
+}
+.container__tape .code__discount span {
+  font-family: "Noto Serif TC";
+  font-size: 19px;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.container__advantage {
+  margin: 8rem 0;
+}
+.container__advantage .advantage__titles {
+  text-align: center;
+  width: 60%;
+  margin: 0 0 4rem 0;
+}
+.container__advantage .advantage__titles h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.container__advantage .advantage__titles p {
+  padding: 0 7rem;
+}
+.container__advantage .card__advantage {
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
+  border-radius: 10px;
+  height: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.container__advantage .card__advantage .card__advantage__icon {
+  padding: 1rem 0;
+}
+.container__advantage .card__advantage .card__advantage__icon svg {
+  width: 50px;
+  height: 50px;
+}
+.container__advantage .card__advantage .card__advantage__title h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.container__reserve__consulting {
+  background: linear-gradient(86deg, rgb(86, 220, 200) 11%, rgb(0, 96, 128) 100%);
+  border-radius: 10px;
+  padding: 5rem 0;
+  position: relative;
+}
+.container__reserve__consulting .reserve__consulting__image {
+  position: absolute;
+  transform: translateX(100px);
+  bottom: 0;
+}
+.container__reserve__consulting .reserve__consulting__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container__reserve__consulting .reserve__titles {
+  color: rgb(255, 255, 255);
+  text-wrap: balance;
+}
+.container__reserve__consulting .reserve__titles h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.container__reserve__consulting .reserve__titles p {
+  font-weight: lighter;
+  padding: 1rem 0;
+}
+
+.container__faq {
+  margin: 8rem 0;
+}
+.container__faq .accordion-item {
+  border: 0;
+}
+.container__faq .faq__titles h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.container__faq .accordion {
+  margin: 2rem 0;
+  gap: 2rem;
+}
+.container__faq .accordion-button:not(.collapsed) {
+  color: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.container__faq .accordion-button::after {
+  z-index: 2;
+}
+.container__faq .accordion-button::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(86, 220, 200);
+  right: 0;
+  flex-shrink: 0;
+  z-index: 1;
+  right: 18px;
+  border-radius: 50%;
+}
+.container__faq .accordion-item {
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.container__recipes {
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container__recipes .recipes__titles {
+  width: 60%;
+  margin: 0 0 4rem 0;
+}
+.container__recipes .recipes__titles h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.container__recipes .recipes__content {
+  height: 500px;
+  margin: 4rem 0;
+}
+.container__recipes .recipes__content .card__recipes {
+  background-color: rgb(252, 247, 239);
+  height: 365px;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__day {
+  font-family: "Noto Serif TC";
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-align: start;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__title {
+  padding: 1rem 0;
+  text-align: start;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__title h4 {
+  font-weight: bold;
+  font-size: 24px;
+  text-wrap: balance;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__ingredients {
+  display: none;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__ingredients ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+  list-style: none;
+  text-align: start;
+  gap: 2rem;
+}
+.container__recipes .recipes__content .card__recipes:hover {
+  transition: all 300ms ease-in-out;
+  transform: translateY(-45px);
+  height: 409px;
+  background: linear-gradient(45deg, rgb(86, 220, 200) 11%, rgb(0, 96, 128) 100%);
+  color: rgb(255, 255, 255);
+}
+.container__recipes .recipes__content .card__recipes:hover .card__recipes__ingredients {
+  display: block;
+}
+.container__recipes .recipes__content .card__recipes .card__recipes__food {
+  display: block !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container__recipes .recipes__content .active__ingredients {
+  display: block !important;
+  transition: all 300ms ease-in-out !important;
+  transform: translateY(-45px);
+  height: 409px;
+  background: linear-gradient(45deg, rgb(86, 220, 200) 11%, rgb(0, 96, 128) 100%) !important;
+  color: rgb(255, 255, 255);
+}
+.container__recipes .recipes__content .active__ingredients .card__recipes__ingredients {
+  display: block;
+}
+
+.container__contact {
+  margin: 8rem 0;
+}
+.container__contact .contact__image__content {
+  width: 70%;
+}
+.container__contact .contact__image__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form__content {
+  box-shadow: 0 0 50px rgba(149, 149, 149, 0.52);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.form__content input,
+.form__content textarea {
+  margin: 0 0 1rem 0;
+  width: 100%;
+  background-color: #fcf7ef;
+  border: none;
+  padding: 0.5rem;
+  color: #d6d6d6;
+}
+.form__content input::-moz-placeholder, .form__content textarea::-moz-placeholder {
+  color: #b6b6b5;
+  padding: 1rem;
+}
+.form__content input::placeholder,
+.form__content textarea::placeholder {
+  color: #b6b6b5;
+  padding: 1rem;
+}
+.form__content textarea {
+  height: 100px;
+  max-height: 100px;
+}
+.form__content .contact__duration {
+  color: hsl(195, 100%, 25%);
+  font-weight: 500;
+}
+
+.contact__form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.container__header {
+  padding: 1rem 0;
+  box-shadow: 1px 1px 20px rgba(149, 149, 149, 0.415);
+}
+
+.footer__container {
+  text-align: center;
+  position: relative;
+  height: 200px;
+}
+.footer__container::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/footer\ figure.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.footer__container .footer__container__image {
+  transform: translateY(3rem);
+  padding: 1rem;
+}
+.footer__container .footer__container__menu {
+  transform: translateY(3rem);
+}
+.footer__container .footer__container__menu ul {
+  color: rgb(255, 255, 255);
+  font-family: "Nunito";
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.footer__container .footer__container__menu ul .active {
+  font-weight: bold;
+}
+
+@media (width <= 500px) {
+  .container__tape .code__discount span {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .card__advantage .row {
+    padding: 0px 2rem;
+  }
+  .card__advantage {
+    height: auto !important;
+    margin-bottom: 1rem !important;
+  }
+  .container__advantage .advantage__titles p {
+    padding: 0 !important;
+  }
+  .container__advantage .advantage__titles {
+    text-align: center;
+    width: 100%;
+    text-wrap: balance;
+    margin: 0 0 4rem 0;
+  }
+  .container__reserve__consulting {
+    margin: 1rem;
+    text-align: center;
+    border-radius: 0px;
+  }
+  .container__recipes .recipes__titles {
+    width: 100%;
+    text-wrap: balance;
+    margin: 0 0 4rem 0;
+  }
+  .active__ingredients {
+    transform: translateY(0px) !important;
+  }
+  .recipes__content {
+    height: auto !important;
+  }
+  .container__banner {
+    height: auto;
+    padding: 3rem 0 0 0;
+  }
+  nav,
+  header {
+    text-align: center;
+    justify-content: center;
+  }
+  header ul {
+    justify-content: center;
+  }
+  .container__banner .banner__image .banner__image__content {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0 0 0;
+  }
+  .container__reserve__consulting .reserve__consulting__image {
+    position: relative;
+    transform: translateX(0);
+    margin-bottom: 1rem;
+    bottom: 0;
+  }
+  .navbar__arely {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .nav__pillis__arely {
+    margin-bottom: 1rem !important;
+  }
+  .container__advantage .row {
+    padding: 1rem;
+  }
+  .container__recipes .recipes__content {
+    margin: 1rem 0;
+  }
+  .container__contact .contact__image__content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

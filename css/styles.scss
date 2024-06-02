@@ -1,0 +1,541 @@
+//Styles Arely Hernandez
+$light__blue: rgb(86, 220, 200);
+$dark__blue: hsl(195, 100%, 25%);
+$white: rgb(255, 255, 255);
+$beige: rgb(252, 247, 239);
+//Fonts
+//Principal Font, Titles
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+//Secondary Font, Subtitles
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.btn__light__blue,
+.btn__dark__blue {
+  background-color: aliceblue;
+  padding: 0.6rem;
+  border-radius: 10px;
+  &:hover {
+    svg {
+      transition: all 300ms ease-in-out;
+      transform: translateX(3px);
+    }
+  }
+}
+.btn__light__blue {
+  background-color: $white;
+  color: $dark__blue;
+  border: 1px solid $dark__blue;
+}
+.btn__dark__blue {
+  background-color: $dark__blue;
+  color: $white;
+  border: 1px solid $dark__blue;
+  &:hover {
+    color: $white !important;
+  }
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.color__light__blue {
+  color: $light__blue;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Serif TC";
+}
+
+p {
+  font-family: "Nunito";
+  font-size: 16px;
+}
+a {
+  font-family: "Nunito";
+  font-weight: bold;
+  text-decoration: none !important;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+//Components
+.nav__pillis__arely {
+  display: inline-block;
+  gap: 1rem;
+  margin-right: 1rem;
+
+  .nav-item {
+    a {
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+    }
+    .active {
+      font-weight: 700;
+      color: $dark__blue !important;
+    }
+  }
+}
+.navbar__arely {
+  background-color: $light__blue;
+  color: $white !important;
+  .navbar__text {
+    font-family: "Nunito";
+    span {
+      font-family: "Nunito";
+      color: $dark__blue;
+      font-weight: bold;
+    }
+  }
+}
+
+//Banner
+
+.container__banner {
+  height: 70vh;
+  .banner__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    span {
+      font-family: "Nunito";
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+    p {
+      margin: 1rem 0;
+      i {
+        font-weight: bold;
+      }
+    }
+  }
+  .banner__image {
+    .banner__image__content {
+      width: 90%;
+      height: 100%;
+      // transform: translateY(18px);
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+//Tape
+
+.container__tape {
+  background: linear-gradient(
+    86deg,
+    rgba(86, 220, 200, 1) 11%,
+    rgba(0, 96, 128, 1) 100%
+  );
+  padding: 0.7rem 0;
+  .code__discount {
+    text-align: center;
+    span {
+      font-family: "Noto Serif TC";
+      font-size: 19px;
+      letter-spacing: 5px;
+      color: $white;
+    }
+  }
+}
+
+//Adventage
+.container__advantage {
+  margin: 8rem 0;
+
+  .advantage__titles {
+    text-align: center;
+    width: 60%;
+    margin: 0 0 4rem 0;
+    h2 {
+      font-weight: bold;
+      font-size: 32px;
+    }
+    p {
+      padding: 0 7rem;
+    }
+  }
+  .card__advantage {
+    box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
+    border-radius: 10px;
+    height: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    .card__advantage__icon {
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+      padding: 1rem 0;
+    }
+    .card__advantage__title {
+      h3 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .card__advantage__description {
+    }
+  }
+}
+
+//Reserve Consulting
+.container__reserve__consulting {
+  background: linear-gradient(
+    86deg,
+    rgba(86, 220, 200, 1) 11%,
+    rgba(0, 96, 128, 1) 100%
+  );
+  border-radius: 10px;
+  padding: 5rem 0;
+  position: relative;
+  .reserve__consulting__image {
+    position: absolute;
+    transform: translateX(100px);
+    bottom: 0;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .reserve__titles {
+    color: $white;
+    text-wrap: balance;
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    p {
+      font-weight: lighter;
+      padding: 1rem 0;
+    }
+  }
+}
+
+//FAQ
+.container__faq {
+  margin: 8rem 0;
+  .accordion-item {
+    border: 0;
+  }
+  .faq__titles {
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+  .accordion {
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+  .accordion-button:not(.collapsed) {
+    color: none !important;
+    background-color: none !important;
+    box-shadow: none !important;
+  }
+  .accordion-button::after {
+    z-index: 2;
+  }
+  .accordion-button::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: $light__blue;
+    right: 0;
+    flex-shrink: 0;
+    z-index: 1;
+    right: 18px;
+    border-radius: 50%;
+  }
+  .accordion-item {
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+}
+
+//Recipes
+
+.container__recipes {
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  .recipes__titles {
+    width: 60%;
+    margin: 0 0 4rem 0;
+    h2 {
+      font-weight: bold;
+      font-size: 32px;
+    }
+  }
+  .recipes__content {
+    height: 500px;
+    margin: 4rem 0;
+    .card__recipes {
+      background-color: $beige;
+      height: 365px;
+      border-radius: 10px;
+      padding: 1rem;
+      position: relative;
+      .card__recipes__day {
+        font-family: "Noto Serif TC";
+        font-size: 15px;
+        letter-spacing: 3px;
+        text-align: start;
+      }
+      .card__recipes__title {
+        padding: 1rem 0;
+        h4 {
+          font-weight: bold;
+          font-size: 24px;
+          text-wrap: balance;
+        }
+        text-align: start;
+      }
+      .card__recipes__ingredients {
+        display: none;
+        ul {
+          margin: 0;
+          padding: 0;
+          font-family: "Nunito";
+          list-style: none;
+          text-align: start;
+          gap: 2rem;
+        }
+      }
+      &:hover {
+        transition: all 300ms ease-in-out;
+        transform: translateY(-45px);
+        height: 409px;
+        background: linear-gradient(
+          45deg,
+          rgba(86, 220, 200, 1) 11%,
+          rgba(0, 96, 128, 1) 100%
+        );
+        color: $white;
+        .card__recipes__ingredients {
+          display: block;
+        }
+      }
+      .card__recipes__food {
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .active__ingredients {
+      display: block !important;
+      transition: all 300ms ease-in-out !important;
+      transform: translateY(-45px);
+      height: 409px;
+      background: linear-gradient(
+        45deg,
+        rgba(86, 220, 200, 1) 11%,
+        rgba(0, 96, 128, 1) 100%
+      ) !important;
+      color: $white;
+      .card__recipes__ingredients {
+        display: block;
+      }
+    }
+  }
+}
+
+//Form Contact
+
+.container__contact {
+  margin: 8rem 0;
+
+  .contact__image__content {
+    width: 70%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.form__content {
+  box-shadow: 0 0 50px rgba(149, 149, 149, 0.52);
+  padding: 1rem;
+  border-radius: 10px;
+  input,
+  textarea {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    background-color: #fcf7ef;
+    border: none;
+    padding: 0.5rem;
+    color: #d6d6d6;
+    &::placeholder {
+      color: #b6b6b5;
+      padding: 1rem;
+    }
+  }
+  textarea {
+    height: 100px;
+    max-height: 100px;
+  }
+  .contact__duration {
+    color: $dark__blue;
+    font-weight: 500;
+  }
+}
+.contact__form {
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+}
+.container__header {
+  padding: 1rem 0;
+  box-shadow: 1px 1px 20px rgba(149, 149, 149, 0.415);
+}
+//Footer
+.footer__container {
+  text-align: center;
+  position: relative;
+  height: 200px;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/footer\ figure.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  .footer__container__image {
+    transform: translateY(3rem);
+    padding: 1rem;
+  }
+  .footer__container__menu {
+    transform: translateY(3rem);
+    ul {
+      color: $white;
+      font-family: "Nunito";
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      .active {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+//Responsive
+@media (width <= 500px) {
+  .container__tape {
+    .code__discount {
+      span {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .card__advantage {
+    .row {
+      padding: 0px 2rem;
+    }
+  }
+  .card__advantage {
+    height: auto !important;
+    margin-bottom: 1rem !important;
+  }
+  .container__advantage .advantage__titles p {
+    padding: 0 !important;
+  }
+  .container__advantage .advantage__titles {
+    text-align: center;
+    width: 100%;
+    text-wrap: balance;
+    margin: 0 0 4rem 0;
+  }
+  .container__reserve__consulting {
+    margin: 1rem;
+    text-align: center;
+    border-radius: 0px;
+  }
+  .container__recipes .recipes__titles {
+    width: 100%;
+    text-wrap: balance;
+    margin: 0 0 4rem 0;
+  }
+  .active__ingredients {
+    transform: translateY(0px) !important;
+  }
+  .recipes__content {
+    height: auto !important;
+  }
+  .container__banner {
+    height: auto;
+    padding: 3rem 0 0 0;
+  }
+  nav,
+  header {
+    text-align: center;
+    justify-content: center;
+  }
+  header {
+    ul {
+      justify-content: center;
+    }
+  }
+  .container__banner .banner__image .banner__image__content {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0 0 0;
+  }
+  .container__reserve__consulting .reserve__consulting__image {
+    position: relative;
+    transform: translateX(0);
+    margin-bottom: 1rem;
+    bottom: 0;
+  }
+  .navbar__arely {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .nav__pillis__arely {
+    margin-bottom: 1rem !important;
+  }
+  .container__advantage {
+    .row {
+      padding: 1rem;
+    }
+  }
+  .container__recipes .recipes__content {
+    margin: 1rem 0;
+  }
+  .container__contact .contact__image__content {
+    width: 100%;
+  }
+}
