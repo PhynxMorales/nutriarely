@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 //Styles Arely Hernandez
 $light__blue: rgb(86, 220, 200);
 $dark__blue: hsl(195, 100%, 25%);
@@ -24,6 +27,11 @@ $beige: rgb(252, 247, 239);
   background-color: $white;
   color: $dark__blue;
   border: 1px solid $dark__blue;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: $dark__blue;
+    color: $white;
+  }
 }
 .btn__dark__blue {
   background-color: $dark__blue;
@@ -94,7 +102,8 @@ a {
 //Banner
 
 .container__banner {
-  height: 70vh;
+  height: 100vh;
+  padding-top: 10rem;
   .banner__description {
     display: flex;
     flex-direction: column;
@@ -137,6 +146,7 @@ a {
     rgba(86, 220, 200, 1) 11%,
     rgba(0, 96, 128, 1) 100%
   );
+  position: relative;
   padding: 0.7rem 0;
   .code__discount {
     text-align: center;
@@ -146,6 +156,11 @@ a {
       letter-spacing: 5px;
       color: $white;
     }
+  }
+  .code__fruit {
+    position: absolute;
+    left: 0;
+    top: -80px;
   }
 }
 
@@ -224,6 +239,11 @@ a {
       padding: 1rem 0;
     }
   }
+  .reserve__fruit {
+    position: absolute;
+    right: -60px;
+    bottom: -10px;
+  }
 }
 
 //FAQ
@@ -268,6 +288,81 @@ a {
     box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
     border-radius: 10px;
     margin: 1rem 0;
+  }
+}
+//About Me
+.aboutme__title {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  h2 {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 2rem;
+    span {
+      color: $light__blue;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+      gap: 0.5rem;
+    }
+  }
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: $dark__blue;
+    path {
+      stroke: $dark__blue;
+    }
+  }
+}
+.aboutme__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .aboutme__image__content {
+    width: 500px;
+    height: 500px;
+
+    img {
+      object-fit: contain;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//Service
+.container__service {
+  margin-top: 1rem;
+  p {
+    font-family: "Nunito";
+    text-align: center;
+  }
+  .service__items {
+    border: 2px solid $light__blue;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -366,7 +461,7 @@ a {
 
 .container__contact {
   margin: 8rem 0;
-
+  position: relative;
   .contact__image__content {
     width: 70%;
     img {
@@ -374,6 +469,11 @@ a {
       width: 100%;
       height: 100%;
     }
+  }
+  .contact__fruit {
+    position: absolute;
+    right: -30px;
+    top: -20px;
   }
 }
 .form__content {
@@ -412,12 +512,32 @@ a {
 .container__header {
   padding: 1rem 0;
   box-shadow: 1px 1px 20px rgba(149, 149, 149, 0.415);
+  position: fixed;
+  width: 100%;
+  margin-top: 3.5rem;
+  background-color: $white;
+  z-index: 999999;
+}
+.navbar__arely {
+  width: 100%;
+  position: fixed !important;
+  z-index: 999999;
+  a {
+    color: $dark__blue;
+    &:hover {
+      color: $white !important;
+    }
+  }
 }
 //Footer
 .footer__container {
+  a {
+    color: $white;
+  }
   text-align: center;
   position: relative;
   height: 200px;
+  margin-top: 8rem;
   &::after {
     position: absolute;
     content: "";
@@ -538,4 +658,85 @@ a {
   .container__contact .contact__image__content {
     width: 100%;
   }
+}
+
+//Button Nutria
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.contact-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-button {
+    font-size: 12px;
+  }
+}
+
+//NUTRIA
+
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: 130px;
+  height: 130px;
+}
+
+.contact-button img {
+  width: 100%;
+  height: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.message-bubble {
+  position: absolute;
+  top: -45px; /* Ajusta la posición vertical del globo */
+  right: 0;
+  background-color: $dark__blue;
+  border: 1px solid $light__blue;
+  color: $white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 13px;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
+  display: block;
+  font-family: "Nunito";
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-button:hover .message-bubble {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .message-bubble {
+    font-size: 10px;
+  }
+}
+.wow {
+  visibility: hidden;
+}
+.accordion-button:focus {
+  box-shadow: none; /* Remove focus outline */
 }
