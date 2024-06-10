@@ -60,3 +60,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Función para abrir el modal
+function openModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+  document.body.classList.add("modal-open"); // Agrega la clase modal-open al body
+}
+
+// Función para cerrar el modal
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open"); // Remueve la clase modal-open del body
+}
+
+// Cerrar el modal si se hace clic fuera de él
+window.onclick = function (event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open"); // Remueve la clase modal-open del body
+  }
+};
