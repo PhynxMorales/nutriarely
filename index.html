@@ -13,6 +13,19 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget"
+        data-url="https://calendly.com/arelyhernandeznutriologa/60min?text_color=06878c&primary_color=14f3e4"
+        style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+    </div>
+  </div>
+
   <div class="contact-button wow animate__animated animate__zoomIn">
     <img src="./assets/nutria.png" alt="Nutri">
     <div class="message-bubble"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 258">
@@ -76,7 +89,7 @@
         <li class="nav-item"><a href="#aboutme" class="">¿Por qúe Arely?</a></li>
         <li class="nav-item"><a href="#recetas" class="">Blog de recetas</a></li>
       </ul>
-      <a class="btn__light__blue" href="">
+      <a class="btn__light__blue" onclick="openModal()">
         Agendemos una consulta
       </a>
 
@@ -92,7 +105,7 @@
           <p><i>Consulta de Nutriólogo en San Luis Potosí.</i>
             No necesitas hacer otra dieta, déjame acompañarte en el proceso de mejorar
             tus hábitos, relación con la comida, tu cuerpo y más…</p>
-          <a class="btn__dark__blue" href="">
+          <a class="btn__dark__blue" onclick="openModal()">
             Agenda una consulta <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="m10 17l5-5m0 0l-5-5" />
@@ -198,7 +211,7 @@
         <p>Mi objetivo es ayudarte a mejorar tus hábitos alimenticios, alcanzar tus metas y equilibrar tu vida, pues de
           eso se
           trata la vida ... ¡De Disfrutar!</p>
-        <a class="btn__light__blue wow animate__animated animate__shakeX" href="">
+        <a class="btn__light__blue wow animate__animated animate__shakeX" onclick="openModal()">
           Agendemos una consulta
         </a>
       </div>
@@ -304,7 +317,7 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-center align-items-center">
         <div class="recipes__titles">
-          <h2>¿Aún no te <span class="color__light__blue">animas </span>?</h2>
+          <h2>¿Aún no te <span class="color__light__blue">animas</span>?</h2>
           <p>Prepare para ti un par de recetas saludables que podrías preparar en tu semana, comenzar a alimentarse bien
             es
             el primer
