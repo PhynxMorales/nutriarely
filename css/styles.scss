@@ -54,15 +54,15 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Noto Serif TC";
+  font-family: "Noto Serif TC", sans-serif;
 }
 
 p {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
 a {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   text-decoration: none !important;
   display: inline-block;
@@ -91,9 +91,9 @@ a {
   background-color: $light__blue;
   color: $white !important;
   .navbar__text {
-    font-family: "Nunito";
+    font-family: "Nunito", sans-serif;
     span {
-      font-family: "Nunito";
+      font-family: "Nunito", sans-serif;
       color: $dark__blue;
       font-weight: bold;
     }
@@ -112,7 +112,7 @@ a {
     align-items: start;
     text-align: left;
     span {
-      font-family: "Nunito";
+      font-family: "Nunito", sans-serif;
     }
     h1 {
       font-size: 42px;
@@ -152,7 +152,7 @@ a {
   .code__discount {
     text-align: center;
     span {
-      font-family: "Noto Serif TC";
+      font-family: "Noto Serif TC", sans-serif;
       font-size: 19px;
       letter-spacing: 5px;
       color: $white;
@@ -348,7 +348,7 @@ a {
 .container__service {
   margin-top: 1rem;
   p {
-    font-family: "Nunito";
+    font-family: "Nunito", sans-serif;
     text-align: center;
     color: $dark__blue;
     font-weight: bold;
@@ -397,7 +397,7 @@ a {
       padding: 1rem;
       position: relative;
       .card__recipes__day {
-        font-family: "Noto Serif TC";
+        font-family: "Noto Serif TC", sans-serif;
         font-size: 15px;
         letter-spacing: 3px;
         text-align: start;
@@ -416,7 +416,7 @@ a {
         ul {
           margin: 0;
           padding: 0;
-          font-family: "Nunito";
+          font-family: "Nunito", sans-serif;
           list-style: none;
           text-align: start;
           gap: 2rem;
@@ -562,7 +562,7 @@ a {
     transform: translateY(3rem);
     ul {
       color: $white;
-      font-family: "Nunito";
+      font-family: "Nunito", sans-serif;
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -635,7 +635,7 @@ a {
   font-size: 13px;
   box-shadow: 0 0 20px rgba(149, 149, 149, 0.52);
   display: block;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   text-align: center;
 }
@@ -655,9 +655,179 @@ a {
 .accordion-button:focus {
   box-shadow: none; /* Remove focus outline */
 }
+//Testimonial
+.container__testiomonial {
+  padding: 5rem 0;
+  h2 {
+    font-weight: bold;
+    span {
+      color: rgb(86, 220, 200);
+    }
+  }
+
+  .carousel-control-next-icon {
+    background: $light__blue;
+    transform: translateX(8vw);
+    border-radius: 100%;
+  }
+  .carousel-control-prev-icon {
+    background: $light__blue;
+    transform: translateX(-8vw);
+    border-radius: 100%;
+  }
+  .testimonial__item {
+    padding: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(
+      86deg,
+      rgba(86, 220, 200, 1) 11%,
+      rgba(0, 96, 128, 1) 100%
+    );
+    color: $white;
+    .testimonial__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: start;
+      text-wrap: balance;
+      .testimonial__card__body {
+        .star__container {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-family: "Nunito", sans-serif;
+        }
+      }
+      .testimonial__card__footer {
+        width: 100%;
+        .testimonial__logo {
+          img {
+            border-radius: 300px;
+            width: 80px;
+            height: 80px;
+            padding: 1rem;
+            border: 2px solid $white;
+          }
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .testimonial__item__image {
+      .testimonial__image {
+        height: 500px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        span {
+          color: $light__blue;
+          background: $white;
+          border-radius: 10px;
+        }
+      }
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+//Báscula Inbody
+.container__balance {
+  margin: 7rem 0;
+  .balance__image {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .balance__title {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-wrap: balance;
+    h2 {
+      font-weight: bold;
+      span {
+        color: #56dcc8;
+      }
+    }
+    svg {
+    }
+    p {
+      margin: 1rem 0;
+    }
+    ul {
+      font-family: "Nunito", sans-serif;
+      li {
+        &::marker {
+          color: $light__blue;
+        }
+      }
+    }
+  }
+}
 
 //Responsive
 @media (width <= 500px) {
+  .container__balance {
+    margin: 5rem 0;
+  }
+  .container__testiomonial .carousel-control-next-icon {
+    background: transparent;
+    transform: translateX(0vw);
+    border-radius: 100%;
+  }
+  .container__testiomonial .carousel-control-prev-icon {
+    background: transparent;
+    transform: translateX(0vw);
+    border-radius: 100%;
+  }
+  .carousel-inner {
+    overflow: hidden;
+  }
+  .container__testiomonial {
+    padding: 1rem 0;
+  }
+  .aboutme__title {
+    padding: 2rem;
+  }
+  .container__tape .code__fruit {
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    img {
+      width: 100px;
+    }
+  }
+  .testimonial__card {
+    &:first-child {
+      flex-direction: column-reverse;
+    }
+  }
+  .carousel-control-next-icon {
+    width: 0;
+  }
+  .testimonial__card__footer {
+    text-align: right;
+  }
   .container__contact {
     overflow: hidden;
   }
@@ -735,7 +905,7 @@ a {
   }
   .container__banner {
     height: auto;
-    padding: 3rem 0 0 0;
+    padding: 19rem 0 0 0;
   }
   nav,
   header {
