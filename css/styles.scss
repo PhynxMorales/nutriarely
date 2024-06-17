@@ -676,7 +676,7 @@ a {
     border-radius: 100%;
   }
   .testimonial__item {
-    padding: 2rem;
+    padding: 0rem;
     border-radius: 10px;
     background: linear-gradient(
       86deg,
@@ -732,6 +732,8 @@ a {
         display: grid;
         place-content: center;
         gap: 1rem;
+        justify-content: center !important;
+        align-items: center !important;
         span {
           color: $light__blue;
           background: $white;
@@ -787,6 +789,40 @@ a {
 
 //Responsive
 @media (width <= 500px) {
+  .aboutme__image .aboutme__image__content {
+    padding: 2rem;
+  }
+  .card__recipes {
+    margin: 1rem 0;
+  }
+  .container__balance .balance__title h2 {
+    padding-top: 3rem;
+    font-size: 32px;
+    text-align: center;
+  }
+  .aboutme__title ul,
+  .aboutme__title h2 {
+    padding: 1rem;
+  }
+  .container__contact {
+    .contact__form {
+      margin-top: 4rem;
+      text-align: center;
+    }
+    .row {
+      padding: 1rem;
+    }
+    .form__content {
+      padding: 2rem 0;
+    }
+  }
+  .container__testiomonial .testimonial__item {
+    padding: 2rem;
+  }
+  .container__testiomonial h2 {
+    font-size: 35px;
+    margin-top: 3rem;
+  }
   .container__balance {
     margin: 5rem 0;
   }
@@ -814,7 +850,7 @@ a {
     left: -30px;
     top: -20px;
     img {
-      width: 100px;
+      width: 80px;
     }
   }
   .testimonial__card {
