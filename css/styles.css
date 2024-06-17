@@ -646,6 +646,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container__testiomonial .testimonial__item .testimonial__card {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
